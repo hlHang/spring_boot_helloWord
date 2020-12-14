@@ -1,5 +1,6 @@
 package com.hlh.controller;
 
+import com.hlh.entity.user;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -12,5 +13,16 @@ public class helloWord {
     public String hello() {
 
         return "helloWord";
+    }
+
+    @ResponseBody
+    @RequestMapping("/introduce")
+    public String introduce() {
+        user user = new user();
+        user.setUserId(1);
+        user.setUserName("超儿");
+        user.setSex("女");
+        user.setAddress("南充");
+        return user.toString();
     }
 }
