@@ -23,6 +23,7 @@ public class helloWord {
         user.setUserName("超儿");
         user.setSex("女");
         user.setAddress("南充");
+        user.setNPrice(18.9);
         return user.toString();
     }
 }

@@ -8,4 +8,5 @@ public class user {
  private String userName;
  private String sex;
  private String address;
+ private double nPrice;
 }
